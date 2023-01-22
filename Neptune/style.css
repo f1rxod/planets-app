@@ -1,0 +1,181 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: url('https://media.istockphoto.com/id/941365072/vector/star-universe-background-illustration-flat-design-for-kid.jpg?s=612x612&w=0&k=20&c=JeoogNfRukmV13-gq4QCP7976xR3c7VMmR7OvydUXC8=');
+}
+nav h1{
+    color: white;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+nav ul{
+    animation: flipInX 2s linear;
+    display: flex;
+}
+nav ul li{
+    margin-right: 30px;
+    padding-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    font-size: large;
+    letter-spacing: 2px;
+}
+hr{
+    border: 1px solid white;
+    color: white;
+}
+.image_planet img{
+    width: 700px;
+    display: block;
+    margin: auto;
+    animation: rotation 10s infinite linear;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.name{
+    animation: fadeInUp 2s linear;
+}
+.desv{
+    animation: fadeInUp 2s linear;
+}
+.planets h1{
+    color: white;
+    font-size: 70px;
+}
+.planets p{
+    color: rgb(201, 201, 201);
+    margin-top: 30px;
+    font-size: 20px;
+}
+.description{
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.source{
+    color: rgb(153, 144, 144); 
+    font-size: large;
+}
+.source a{
+    margin-left: 10px; color: rgb(180, 180, 180); font-size: large;
+}
+.info_bttns span{
+    margin-right: 20px;
+    color: rgb(180, 180, 180);
+}
+.info_bttns{
+    animation: fadeInUp 2s linear;
+    margin-top: 50px;
+}
+.info_bttns button{
+    background-color: rgb(7,6,35);
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+}
+.info_bttns .active{
+    background-color: rgb(101, 50, 201);
+}
+.additional{
+    margin: 50px 10%;
+    animation: flipInX 2s linear;
+}
+.additional .col-lg-3{
+    border: 1px solid white;
+    text-align: center;
+    width: 23%;
+}
+.additional p{
+    font-size: 15px;
+}
+.additional h1{
+    font-size: 30px;
+}
+.no-last{
+    margin-right: 30px;
+}
+.last{
+    margin-right: 0;
+}
+footer p{
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width:1875px){
+    .additional .col-lg-3{
+        width: 22%;
+    }
+}
+@media only screen and (max-width:1646px){
+    .links ul{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .links ul::-webkit-scrollbar {
+        display: none;
+      }
+    .col-xl-6{
+        width: 100%;
+    }
+    .links{
+        width: 100%;
+    }
+    .brand{
+        text-align: center;
+    }
+    .links ul li{
+        display: block;
+        margin: auto 70px;
+    }
+    .image_planet img{
+        width: 600px;
+    }
+}
+@media only screen and (max-width:994px ) {
+    .description{
+        width: 48%;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width:1110px){
+    .description{
+        width: 48%;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width:991px){
+    .description{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .additional .col-lg-3{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:800px){
+    .links ul li{
+        display: block;
+        margin: auto 20px;
+    }
+    .image_planet img{
+        width: 300px;
+    }
+}
